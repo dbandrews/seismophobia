@@ -56,7 +56,7 @@ knitr::include_graphics(here::here("visuals", "feature_distributions_across_resp
 
 Younger people tend to report being afraid more often than older people, while women report being afraid more often than men. The geographic region with the highest level of fear is the Pacific. Overall there were more people who were not afraid of earthquakes than were afraid.
 
-```{r target_distribution, fig.align = 'center', out.width = "50%", fig.cap = "Fig 3: The distribution of earthquake fear among respondents"}
+```{r target_distribution, fig.align = 'center', out.width = "75%", fig.cap = "Fig 3: The distribution of earthquake fear among respondents"}
 knitr::include_graphics(here::here("visuals", "target_distribution.png"))
 ```
 
@@ -103,6 +103,6 @@ The next feature that both models identified as predictive of a positive fear re
 
 With the data that we have, our models were not effective in identifying people who are afraid of earthquakes with a high degree of certainty. However, because our data set had only four features, we believe there is potential for improved predictions if we had a more comprehensive data set. This would require collecting more information in the form of a larger survey.
 
-The R [\@R] and Python [\@van1995python] programming languages and the following Python packages were used for this project: pandas [\@reback2020pandas], sklearn [\@scikit-learn], tidyverse [\@tidyverse], and knitr [\@knitr]. The code used to perform the analysis and create this report can be found at: <https://github.com/UBC-MDS/seismophobia>
+The R [\@R] and Python [\@van1995python] programming languages and the following Python packages were used for this project: pandas [\@reback2020pandas], sklearn [\@scikit-learn], shap[\@NIPS2017\_7062], tidyverse [\@tidyverse], and knitr [\@knitr]. The code used to perform the analysis and create this report can be found at: <https://github.com/UBC-MDS/seismophobia>
 
 ## References
