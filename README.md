@@ -13,7 +13,7 @@ We aim to predict groups in the population that are afraid of earthquakes and th
 
 We'll be working with the San Andreas Earthquake data set from [`fivethirtyeight`](https://github.com/fivethirtyeight/data/tree/master/san-andreas) which collected people's relative fear of earthquakes along with other demographic attributes such as age, gender, household income and region.
 
-We aim to determine a model for predicting a person's fear of earthquakes, given demographic features about that person. We will investigate a binary classifier that can predict if a person has fear about earthquakes (seismophobia) given their prior experience with earthquakes and demographic attributes.
+We aim to determine a model for predicting a person's fear of earthquakes, given demographic features about that person. We will investigate binary classifiers - random forest and logistic regression - that can predict if a person has fear about earthquakes (seismophobia) given their demographic attributes.
 
 ## Report
 
@@ -25,9 +25,13 @@ We suggest either of the following 2 methods to reproduce our analysis:
 
 ### 1. Using Docker
 
-After cloning the Github repo - to use the Docker image and run the analysis, first install Docker Desktop. 
+After (1) cloning the Github repo - to use the Docker image and run the analysis, first (2) install Docker Desktop. 
 
-To clean out intermediate files and rerun the entire analysis run:
+Then, (3) navigate to the root of the directory where you cloned this repository.
+
+Expected total time to clean and rerun the entire analysis is approximately 5-10 minutes (This may vary depending on device/stability of internet connection).
+
+(4) To clean out intermediate files and rerun the entire analysis run:
 ```bash
 $ bash clean_and_run_analysis_docker.sh
 ```
