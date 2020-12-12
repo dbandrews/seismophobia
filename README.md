@@ -21,7 +21,9 @@ The final report can be found [here](https://htmlpreview.github.io/?https://gith
 
 ## Environment Setup
 
-### Using Docker
+We suggest either of the following 2 methods to reproduce our analysis:
+
+### 1. Using Docker
 
 After cloning the Github repo - to use the Docker image and run the analysis, first install Docker Desktop. 
 
@@ -43,7 +45,7 @@ Then re run the analysis using:
 ```
 $ docker run --rm -e PASSWORD="test" -v "/$(pwd)":/home/seismophobia/ dbandrews/seismophobia:v0.4.0 make directory=/home/seismophobia all
 ```
-### Using Make, Conda & R
+### 2. Using Make, Conda & R
 
 Ensure that you have installed GNU Make and it's on your PATH variable.
 
@@ -94,6 +96,8 @@ Bureau, US Census. 2018. “Income and Poverty in the United States: 2015.” Th
 ———. 2019. “State Population Totals: 2010-2019.” The United States Census Bureau. https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html.
 
 Dooley, David, Ralph Catalano, Shiraz Mishra, and Seth Serxner. 1992. “Earthquake Preparedness: Predictors in a Community Survey1.” Journal of Applied Social Psychology 22 (6): 451–70. https://doi.org/https://doi.org/10.1111/j.1559-1816.1992.tb00984.x.
+
+Lundberg, Scott M, and Su-In Lee. 2017. “A Unified Approach to Interpreting Model Predictions.” In Advances in Neural Information Processing Systems 30, edited by I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett, 4765–74. Curran Associates, Inc. http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf.
 
 Paton, D, J Mcclure, and Petra Buergelt. 2006. “Natural Hazard Resilience: The Role of Individual and Household Preparedness.” In Disaster Resilience an Integrated Approach, edited by Douglas Paton and David Johnston, 105–27. Charles C Thomas Publisher, Ltd.
 
