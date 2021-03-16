@@ -22,7 +22,7 @@ We use a random forest classifier and logistic regression model to predict a per
 
 ## Introduction
 
-The damage that earthquakes cause can leave people without food, water, and shelter. Being prepared for an earthquake before it happens can make living through the immediate aftermath less traumatic (\@72124acf2fa84e8aad36e68d0dc4c5e6). Having insurance that covers the damage caused by earthquakes may reduce the uncertainty and fear that the threat of earthquakes creates. People who are afraid of earthquakes represent a group of potential clients for companies selling earthquake preparedness products and insurance. It has been demonstrated that people who are more concerned about earthquakes are more likely to have taken preparatory measures, such as owning a preparedness kit [\@doi.org/10.1111/j.1559-1816.1992.tb00984.x].
+The damage that earthquakes cause can leave people without food, water, and shelter. Being prepared for an earthquake before it happens can make living through the immediate aftermath less traumatic (@72124acf2fa84e8aad36e68d0dc4c5e6). Having insurance that covers the damage caused by earthquakes may reduce the uncertainty and fear that the threat of earthquakes creates. People who are afraid of earthquakes represent a group of potential clients for companies selling earthquake preparedness products and insurance. It has been demonstrated that people who are more concerned about earthquakes are more likely to have taken preparatory measures, such as owning a preparedness kit [@doi.org/10.1111/j.1559-1816.1992.tb00984.x].
 
 We aim to predict whether a US resident is afraid of earthquakes and to identify which demographic features contribute to the prediction. This information could be used to identify target demographics for advertising. This would enable earthquake-related companies to build a marketing strategy based on this information to reach potential customers and increase revenue.
 
@@ -48,7 +48,7 @@ Some preliminary examination of the data shows some relation between the demogra
 knitr::include_graphics(here::here("visuals", "feature_distributions.png"))
 ```
 
-The survey respondents were fairly evenly split across ages categories and genders. The household income distribution was not uniform, but is likely a reflection of the US population's income distribution, that had a median value of $55,775 in 2015 [\@bureau\_2018]. The distribution across US regions was not uniform, possibly due to the fact that the list of regions is divided into geographic regions that don't necessarily have the same populations. For example, the Pacific region (Washington, Oregon, and California) has a population of 50.1 million compared to New England (Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island, and Vermont) has a combined population of 14.7 million [\@bureau\_2019].
+The survey respondents were fairly evenly split across ages categories and genders. The household income distribution was not uniform, but is likely a reflection of the US population's income distribution, that had a median value of $55,775 in 2015 [@bureau_2018]. The distribution across US regions was not uniform, possibly due to the fact that the list of regions is divided into geographic regions that don't necessarily have the same populations. For example, the Pacific region (Washington, Oregon, and California) has a population of 50.1 million compared to New England (Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island, and Vermont) has a combined population of 14.7 million [@bureau_2019].
 
 ```{r feature_distributions_across_response, fig.align = 'center', out.width = "100%", fig.cap = "Fig 2: The level of earthquake fear across demograhic features"}
 knitr::include_graphics(here::here("visuals", "feature_distributions_across_response.png"))
@@ -56,7 +56,7 @@ knitr::include_graphics(here::here("visuals", "feature_distributions_across_resp
 
 Younger people tend to report being afraid more often than older people, while women report being afraid more often than men. The geographic region with the highest level of fear is the Pacific. Overall there were more people who were not afraid of earthquakes than were afraid.
 
-```{r target_distribution, fig.align = 'center', out.width = "50%", fig.cap = "Fig 3: The distribution of earthquake fear among respondents"}
+```{r target_distribution, fig.align = 'center', out.width = "75%", fig.cap = "Fig 3: The distribution of earthquake fear among respondents"}
 knitr::include_graphics(here::here("visuals", "target_distribution.png"))
 ```
 
@@ -103,6 +103,6 @@ The next feature that both models identified as predictive of a positive fear re
 
 With the data that we have, our models were not effective in identifying people who are afraid of earthquakes with a high degree of certainty. However, because our data set had only four features, we believe there is potential for improved predictions if we had a more comprehensive data set. This would require collecting more information in the form of a larger survey.
 
-The R [\@R] and Python [\@van1995python] programming languages and the following Python packages were used for this project: pandas [\@reback2020pandas], sklearn [\@scikit-learn], tidyverse [\@tidyverse], and knitr [\@knitr]. The code used to perform the analysis and create this report can be found at: <https://github.com/UBC-MDS/seismophobia>
+The R [@R] and Python [@van1995python] programming languages and the following Python packages were used for this project: pandas [@reback2020pandas], sklearn [@scikit-learn], shap[@NIPS2017_7062], tidyverse [@tidyverse], and knitr [@knitr]. The code used to perform the analysis and create this report can be found at: <https://github.com/UBC-MDS/seismophobia>
 
 ## References
